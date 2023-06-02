@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paytm Clone</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="paytm.css">
+    <!-- Font aswome Link -->
+    <script src="https://kit.fontawesome.com/5d6c43337b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+       <div class="navbar">
+          <a href="#"><img src="data:image/png;base64,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" alt="Logo" width="13%"></a>
+          <a href="#">Payment for Consumer</a>
+          <a href="#">Payment for Business</a>
+          <a href="#">Investor Relations</a>
+          <a href="#">Company</a>
+          <a href="#">Career</a>
+          <div class="sign"> 
+              <a href="#"><span>Sign In</span><span class="user"><i class="fa-solid fa-user" style="color: #ffffff;"></i></span></a>
+          </div>
+       </div>
+    </nav>
+    <div class="msg">
+        <p>No Wallet KYC Required😊to pay using UPI on Paytm.<b> Learn more.</b> 
+        </p>
+    </div>
+<main>
+    <section class="section">
+        <div class="main">
+            <div class="left">
+                <img src="data:image/png;base64,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" alt="Logo" width="85px"> <br>
+                <h1><strong>India's Most-loved Payments App</strong></h1>
+                <p class="para">Recharge & pay bills, book flights & movie tickets, open a savings account, invest in stocks & mutual funds, and do a lot more.</p>
+                <div class="play-btn">
+                    <p class="btn"><b>Download Paytm App </b><i class="fa-brands fa-apple"></i>  <i class="fa-brands fa-google-play"></i> </p>
+                </div>
+            </div>
+            <div class="right">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFFL9AQ-e009sixNu0lCh1nFdWAO-oYIOSew&usqp=CAU" alt="Image" width="550px">
+            </div>
+        </div>
+    </section>
+    <section class="section1">
+        <div class="main1">
+            <div class="sub_head">
+                <h1>Recharge & Pay Bills on Paytm.</h1>
+            </div>
+          <div class="bills">
+               <div class="bills1">
+                  <a href="#"><img src="https://assetscdn1.paytm.com/images/catalog/view/308196/1615545193711.png" alt=""><br>Reachage <br>Postpaid <br>Mobile ></a>
+                </div>
+                <div class="bills1">
+                    <a href="#"><img src="https://assetscdn1.paytm.com/images/catalog/view_item/765038/1615545880212.png" alt=""><br>Pay <br>Elactric <br>Bill ></a>
+                  </div>
+                  <div class="bills1">
+                    <a href="#"><img src="https://assetscdn1.paytm.com/images/catalog/view_item/765037/1615545722327.png" alt=""><br>Reachage <br>DTH <br>Connection ></a>
+                  </div>
+                  <div class="bills1">
+                    <a href="#"><img src="https://assetscdn1.paytm.com/images/catalog/view_item/765031/1615545964726.png" alt=""><br>Book <br>Gas <br>Cylinder ></a>
+                  </div>
+                  <div class="bills1">
+                    <a href="#"><img src="https://assetscdn1.paytm.com/images/catalog/view_item/765078/1618919227219.png" alt=""><br>Pay <br>Broadband & <br>Landline Bill ></a>
+                  </div>
+                  <div class="bills1">
+                    <a href="#"><img src="https://assetscdn1.paytm.com/images/catalog/view_item/799684/1618557895491.png" alt=""><br>Pay <br>Education <br>Fee ></a>
+                  </div>
+                  <div class="bills1">
+                    <a href="#"><img src="https://paytm-landing-page.vercel.app/assets/icons/all-payment-services.png" alt=""><br>All <br>Payment <br>Services ></a>
+                  </div>
+           </div>
+        </div>
+        <div class="main1" style="background-color: #002970;">
+            <div class="sub_head">
+                <h1>Book & Buy on Paytm.</h1>
+            </div>
+          <div class="bills">
+               <div class="bills1">
+                  <a href="#"><img src="C:\Users\DELL\Pictures\movie tickets.png" alt=""><br>Movie <br>Tickets ></a>
+                </div>
+                <div class="bills1">
+                    <a href="#"><img src="https://cdn.zoutons.com/images/originals/stores/square/Paytm_Flights_1653645549.png?tr=w-200,h-200,c-force" alt=""><br>Flight <br>Tickets ></a>
+                  </div>
+                  <div class="bills1">
+                    <a href="#"><img src="C:\Users\DELL\Pictures\bus tickets.png" alt=""><br>Bus <br>Tickets ></a>
+                  </div>
+                  <div class="bills1">
+                    <a href="#"><img src="https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAZERO-CHARGESPAYT100017529DD6A9D/0x1920/70/6.jpg" alt=""><br>Train <br>Tickets ></a>
+                  </div>
+                  <div class="bills1">
+                    <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5fhGWTE4QqebBFXsg6yN5L7KFO4qsnXHiuQ&usqp=CAU" alt=""><br>Buy <br>Insurence ></a>
+                  </div>
+                  <div class="bills1">
+                    <a href="#"><img src="C:\Users\DELL\Pictures\International.png" alt=""><br>International <br>Flights ></a>
+                  </div>
+                  <div class="bills1">
+                    <a href="#"><img src="https://static.paytmmoney.com/android-chrome-192x192.png" alt=""><br>Invest <br>in Stocks ></a>
+                  </div>
+           </div>
+        </div>
+    </section>
+    <section class="sec3">
+        <div class="main">
+          <h2>Paytm Payment Instruments</h2>
+   
+          <div class="card">
+            <div class="left1">
+             <div class="img">
+               <img src="data:image/png;base64,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" alt="Img" width="90px"> Paytm Wallet
+             </div>
+             <div class="content">
+               <h3>The Fastest Way to Pay In-store & Online.</h3>
+               <p>Load up your Paytm Wallet for free and make payments in a jiffy at over 21 million stores, websites and apps.</p>
+               <div class="play-btn">
+                 <p class="btn"><b>Download Paytm App </b><i class="fa-brands fa-apple"></i>  <i class="fa-brands fa-google-play"></i> </p>
+               </div>
+             </div>
+            </div>
+            <img src="https://chhitopaisa.com.np/images/display_dummy.png" alt="Img" width="500px">
+          </div>
+   
+   
+   
+   
+          <br><br><br>
+          <div class="card">
+           <div class="left1">
+            <div class="img">
+              <img src="https://assetscdn1.paytm.com/images/catalog/view_item/764072/1615964143086.png" alt="Img" width="90px"> UPI Money Transfer
+            </div>
+            <div class="content">
+              <h3>Pay anyone directly from your bank account.</h3>
+              <p>Pay anyone, everywhere. Make contactless & secure payments in-stores or online using Paytm Wallet or Directly from your Bank Account. Plus, send & receive money from anyone.</p>
+              <div class="play-btn">
+                <p class="btn"><b>Download Paytm App </b><i class="fa-brands fa-apple"></i>  <i class="fa-brands fa-google-play"></i> </p>
+              </div>
+            </div>
+           </div>
+           <img src="C:\Users\DELL\Pictures\money.png" alt="Img" width="500px">
+         </div>
+   
+   
+   
+         <br><br><br>
+          <div class="card">
+           <div class="left1">
+            <div class="img">
+              <img src="C:\Users\DELL\Pictures\postpaid.png" alt="Img" width="160px">
+            </div>
+            <div class="content">
+              <h3>Want it? <br>
+               No more waiting for it.</h3>
+              <p>With Paytm Postpaid, your wishlist doesn't have to be on the waitlist. Shop for the things you want today and pay for them next month.</p>
+              <div class="learn-btn">
+                <p class="btn"><b>Learn More ></b> </p>
+              </div>
+            </div>
+           </div>
+           <img src="C:\Users\DELL\Pictures\shopping.png" alt="Img" width="400px">
+         </div>
+   
+   
+   
+         <br><br><br>
+         <div class="card2 left">
+           <div class="content2">
+           <img src="C:\Users\DELL\Pictures\hdfc.png" alt="Img" width="200px">
+   
+           <h3>Unlimited Cashback
+             Every time</h3>
+             <p>Paytm HDFC Bank Select Credit Card. A card with assured Cashback and incredible offers.</p>
+             <img src="C:\Users\DELL\Pictures\hdfc_card.png" alt="Card" width="500px">
+         </div>
+       </div>
+       <div class="card2 right" style="margin-right: 140px; ">
+         <div class="content2" style="margin-top: 54px;">
+         <img src="C:\Users\DELL\Pictures\sbi.png" alt="Img" width="200px">
+   
+         <h3>India’s Most
+           Sincere Credit Card</h3>
+           <p>Paytm SBI Card SELECT - With Intelligent Features & Great Rewards that Never Expire</p>
+           <img src="C:\Users\DELL\Pictures\sbi card.png" alt="Card" width="500px">
+       </div>
+     </div> 
+        </div>
+      </section>
+   
+   
+   
+   
+      <section class="sec4">
+       <br><br>
+       <div class="main">
+         <div class="left">
+             <img src="https://image3.mouthshut.com/images/imagesp/925917139s.jpeg" alt="Logo" width="200px"> <br>
+             <h1><strong>India's most sincere bank.</strong></h1>
+             <p class="para">Paytm Payments Bank offers secure, transparent and risk-free banking at your fingertips. With instant account opening, virtual debit card and zero balance requirements, experience the future of banking today.</p>
+             <div class="learn-btn">
+                 <p class="btn"><b>Learn More > </b></p>
+             </div>
+         </div>
+         <div class="right">
+             <img src="C:\Users\DELL\Pictures\service.png" alt="Image" width="400px" style="margin-right: 200px;">
+         </div>
+     </div>
+      </section>
+   </main>
+   
+       
+   </body>
+   </html>
